@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-
 import { useRouter } from 'next/router';
-
 import Layout from '../components/layout';
 import Hero from '../components/hero';
 

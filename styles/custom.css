@@ -1,0 +1,234 @@
+  .dogesoundText {
+    animation-name: rightToLeft;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+  
+  @keyframes rightToLeft {
+    0% {
+      transform: translateX(720px);
+    }
+    100% {
+      transform: translateX(-900px);
+    }
+}
+
+.footerLineMain {
+    position: relative;
+    width: 465px;
+    height: 0px;
+    left: 0px;
+    top: 90px;
+  
+    border: 1px solid #636363;
+  }
+  
+  .footerLineBranch1 {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    left: -1px;
+    top: 0px;
+  
+    border: 1px solid #636363;
+  }
+  
+  .footerLineBranch2 {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    left: 150px;
+    top: 0px;
+  
+    border: 1px solid #636363;
+  }
+  
+  .footerLineBranch3 {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    left: 194px;
+    top: 0px;
+  
+    border: 1px solid #636363;
+  }
+  
+  .footerLineBranch4 {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    left: 238px;
+    top: 0px;
+  
+    border: 1px solid #636363;
+  }
+  
+  .footerLineBranch5 {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    left: 282px;
+    top: 0px;
+  
+    border: 1px solid #636363;
+  }
+  
+  .footerLineBranch6 {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    left: 326px;
+    top: 0px;
+  
+    border: 1px solid #636363;
+  }
+  
+  .footerLineBranch7 {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    left: 370px;
+    top: 0px;
+  
+    border: 1px solid #636363;
+  }
+  
+  .footerLineBranch8 {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    left: 413px;
+    top: 0px;
+  
+    border: 1px solid #636363;
+  }
+  
+  .footerLineBranch9 {
+    /* @2023 DSC LABEL inc. */
+    position: absolute;
+    width: 210px;
+    height: 16px;
+    left: 0px;
+    top: 80px;
+  
+    font-family: "NeoDunggeunmo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* or 100% */
+  
+    color: #838383;
+  }
+  
+  .footerLineBranch10 {
+    /* --Go to old version */
+    position: absolute;
+    width: 240px;
+    height: 18px;
+    left: 270px;
+    top: 80px;
+  
+    font-family: "NeoDunggeunmo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* or 100% */
+  
+    color: #ffffff;
+  }
+  
+  .footerLineBranchAttached2 {
+    /* Opensea */
+  
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 5px;
+    top: 20px;
+  
+    background-image: url("/img/icon/opensea.png");
+    background-size: cover;
+  
+  }
+  
+  .footerLineBranchAttached3 {
+    /* Discord */
+  
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 5px;
+    top: 20px;
+  
+    background-image: url("/img/icon/discord.png");
+    background-size: cover;
+  
+  }
+  
+  .footerLineBranchAttached4 {
+    /* Github */
+  
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 5px;
+    top: 20px;
+  
+    background-image: url("/img/icon/github.png");
+    background-size: cover;
+  }
+  
+  .footerLineBranchAttached5 {
+    /* Twitter */
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 5px;
+    top: 20px;
+  
+    background-image: url("/img/icon/twitter.png");
+    background-size: cover;
+  }
+  
+  .footerLineBranchAttached6 {
+    /* Youtube */
+  
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 5px;
+    top: 20px;
+  
+    background-image: url("/img/icon/youtube.png");
+    background-size: cover;
+  }
+  
+  .footerLineBranchAttached7 {
+    /* Telegram */
+  
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 5px;
+    top: 20px;
+  
+    background-image: url("/img/icon/telegram.png");
+    background-size: cover;
+  }
+  
+  .footerLineBranchAttached8 {
+    /* Instagram */
+  
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 5px;
+    top: 20px;
+  
+    background-image: url("/img/icon/instagram.png");
+    background-size: cover;
+  }
+  

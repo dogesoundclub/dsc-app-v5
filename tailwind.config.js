@@ -10,10 +10,11 @@ module.exports = {
       neodgm: "neodgm",
     },
     extend: {
-      backgroundImage: (theme) => ({
-        'himaskman660660': "url(/public/img/himaskman660660.png)" // 유효한 주소값.
-      })
-    },
+      transitionDuration: {
+        '0': '0ms',
+        '20000': '20000ms',
+      }
+    }
   },
   plugins: [
     require('tailwind-scrollbar-hide')

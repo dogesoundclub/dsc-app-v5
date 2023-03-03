@@ -17,6 +17,7 @@
     "next": "13.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-external-link": "^2.1.0",
     "react-notion": "^0.10.0",
     "tailwind-scrollbar-hide": "^1.1.7",
     "typescript": "4.9.5"
