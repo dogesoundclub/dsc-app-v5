@@ -1,4 +1,15 @@
-  .dogesoundText {
+.width465 {
+    width: 465px;
+}
+
+.height99 {
+    height: 99px;
+}
+
+
+
+
+.dogesoundText {
     animation-name: rightToLeft;
     animation-duration: 20s;
     animation-timing-function: linear;
@@ -10,7 +21,7 @@
       transform: translateX(720px);
     }
     100% {
-      transform: translateX(-900px);
+      transform: translateX(-1650px);
     }
 }
 

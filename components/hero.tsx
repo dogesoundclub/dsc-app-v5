@@ -27,25 +27,28 @@ export default function Hero() {
 
     return (
         <>
-            <div className="flex w-full h-80">{/*hi*/}
-                <div className="relative w-full h-full left-0 top-6 bg-[url('/img/welcome.png')] bg-contain"></div>
+            <div className="flex w-[465px]">{/*hi*/}
+                <div className="relative w-[300px] h-[300px] left-0 top-[120px] bg-[url('/img/himaskman660660.png')] bg-cover"></div>
+                <div className="relative w-[150px] h-[300px] left-[15px] top-[120px] bg-[url('/img/dscSlogan.png')] bg-cover"></div>
             </div>
-            <div className="relative w-full h-10 left-0 top-9 bg-slate-800 border-solid border-4 border-red-700">{/*bestDogeSoundBox*/}
+            <div className="relative top-[93px]">
+            <div className="relative w-[465px] h-10 left-0 top-9 bg-slate-800 border-solid border-4 border-red-700">{/*bestDogeSoundBox*/}
                         <div className="relative w-full top-1 m-auto overflow-x-scroll scrollbar-hide">{/*wrapperDogeSound*/}
-                            <p className="dogesoundText w-full font-neodgm whitespace-nowrap text-white">{congratulation}</p>{/*targetDogeSound*/}
+                            <p className="dogesoundText w-[1000px] font-neodgm whitespace-nowrap text-white">{congratulation}</p>{/*targetDogeSound*/}
                     </div>
             </div>
-            <div className='flex space-x-16'>
+            <div className="flex space-x-4">
             <div>                
-                <div className="relative w-48 h-48 left-0 top-12 bg-[url('/img/logodsc400400.jpg')] bg-cover"></div>{/*logoDsc*/}
-                <div className="relative w-48 h-48 left-0 top-12 bg-[url('/img/gameBoyDscBigSize.gif')] bg-cover"></div>{/*gameboyDsc*/}
+                <div className="relative w-[150px] h-[150px] left-0 top-12 bg-[url('/img/logodsc400400.jpg')] bg-cover"></div>{/*logoDsc*/}
+                <div className="relative w-[150px] h-[150px] left-0 top-12 bg-[url('/img/gameBoyDscBigSize.gif')] bg-cover"></div>{/*gameboyDsc*/}
             </div>
-            <div className='w-full'>
-                <div className="relative w-full h-full let-0 top-12 bg-[url('https://storage.googleapis.com/dsc-engine/gif/8680.gif')] bg-cover"></div>{/*portalEngine*/}
-                <div className="relative w-full h-8 top-4 bg-red-800">{/*portalEngineBox*/}
-                    <p className="relative h-8 top-1 font-neodgm text-white text-xl text-center">{TEXT_DO_NOT_TOUCH}{/*portalEngineText*/}</p>
+            <div>
+                <div className="relative w-[300px] h-[300px] left-0 top-12 bg-[url('https://storage.googleapis.com/dsc-engine/gif/8680.gif')] bg-cover"></div>{/*portalEngine*/}
+                <div className="relative w-[300px] h-8 top-4 bg-red-800">{/*portalEngineBox*/}
+                    <p className="relative w-[300px] h-8 top-[3px] font-neodgm text-white text-xl text-center">{TEXT_DO_NOT_TOUCH}{/*portalEngineText*/}</p>
             </div>
             </div></div>
+            </div>
         </>
     )
 }

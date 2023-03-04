@@ -1,3 +1,4 @@
+import Nav from './nav';
 import Header from './header';
 import Footer from './footer';
 import Hero from './hero';
@@ -9,18 +10,12 @@ interface LayoutProps {
 
 export default function Layout({children} : LayoutProps) {
     return (
-        <div className="grid grid-cols-3">
-            <div>01</div>
-            <div>
-            <Header/>
-            <Hero/>
-            <div>
-                
-                {children}
-            </div>
+        <div className="flex flex-col items-center zoom-[80%]">
+            <Header/>         
+            <Hero/>            
+            {children}   
+            <Nav/>
             <Footer/>
-            </div>
-            <div>03</div>
         </div>
     )
 }
