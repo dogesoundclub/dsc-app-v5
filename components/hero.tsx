@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useState, useEffect } from "react";
+import { prefix } from "../config/config";
 
 export default function Hero() {
 
@@ -28,8 +29,12 @@ export default function Hero() {
     return (
         <>
             <div className="flex w-[465px]">{/*hi*/}
-                <div className="relative w-[300px] h-[300px] left-0 top-[120px] bg-[url('/img/himaskman660660.png')] bg-cover"></div>
-                <div className="relative w-[150px] h-[300px] left-[15px] top-[120px] bg-[url('/img/dscSlogan.png')] bg-cover"></div>
+                <div className="relative w-[300px] h-[300px] left-0 top-[120px] bg-cover" 
+                     style={{backgroundImage : `url(${prefix}/img/himaskman660660.png`}}>
+                </div>
+                <div className="relative w-[150px] h-[300px] left-[15px] top-[120px] bg-cover"
+                     style={{backgroundImage : `url(${prefix}/img/dscSlogan.png)`}}>
+                </div>
             </div>
             <div className="relative top-[93px]">
             <div className="relative w-[465px] h-10 left-0 top-9 bg-slate-800 border-solid border-4 border-red-700">{/*bestDogeSoundBox*/}
@@ -39,8 +44,12 @@ export default function Hero() {
             </div>
             <div className="flex space-x-4">
             <div>                
-                <div className="relative w-[150px] h-[150px] left-0 top-12 bg-[url('/img/logodsc400400.jpg')] bg-cover"></div>{/*logoDsc*/}
-                <div className="relative w-[150px] h-[150px] left-0 top-12 bg-[url('/img/gameBoyDscBigSize.gif')] bg-cover"></div>{/*gameboyDsc*/}
+                <div className="relative w-[150px] h-[150px] left-0 top-12 bg-cover"
+                     style={{backgroundImage : `url(${prefix}/img/logodsc400400.jpg)`}}>
+                </div>{/*logoDsc*/}
+                <div className="relative w-[150px] h-[150px] left-0 top-12 bg-cover"
+                     style={{backgroundImage : `url(${prefix}/img/gameBoyDscBigSize.gif)`}}>
+                </div>{/*gameboyDsc*/}
             </div>
             <div>
                 <div className="relative w-[300px] h-[300px] left-0 top-12 bg-[url('https://storage.googleapis.com/dsc-engine/gif/8680.gif')] bg-cover"></div>{/*portalEngine*/}
