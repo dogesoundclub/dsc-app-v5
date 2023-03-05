@@ -1,7 +1,7 @@
 import { baseUrl, hostUrl, localUrl } from "@utils/discordAPI";
 import axios from "axios";
+import "dotenv/config";
 import type { NextApiRequest, NextApiResponse } from "next";
-import { client_secret, botToken } from "private/env";
 
 function makeConfig(authorization_token: string) {
   const data = {
@@ -21,8 +21,8 @@ export default async function handler(
   const reqData = JSON.parse(req.body);
   console.log(reqData);
   const params = new URLSearchParams();
-  params.append("client_id", "1057714376129400872");
-  params.append("client_secret", client_secret);
+  params.append("client_id", "1072739158570844180");
+  params.append("client_secret", process.env.CLIENT_SECRET!);
   params.append("grant_type", "authorization_code");
   params.append(
     "redirect_uri",

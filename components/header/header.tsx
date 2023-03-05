@@ -4,14 +4,20 @@ import { useRouter } from "next/router";
 import HeaderItem from "./headerItem";
 import { IoIosArrowDown } from "react-icons/io";
 
-export default function Header() {
-    const hook = useUser();
-    const router = useRouter();
+import { useSession, signIn, signOut } from "next-auth/react"
 
-    return (
+export default function Header() {
+    // const hook = useUser();
+    const router = useRouter();
+    const { data: session } = useSession();
+    if (session) {
+      return (
         <>
             <div className="w-[465px] relative -top-[990px] flex flex-col items-end">
-            {!hook.login ? (
+            Signed in as {session.user.name} <br />
+        <button onClick={() => signOut()}>Sign out</button>
+
+            {/* {!hook.login ? (
               <HeaderItem
                 title="로그인"
                 onClick={() => {
@@ -50,8 +56,16 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-            )}
+            )} */}
           </div>
         </>
     )
+    }
+    return (
+      <>
+      Not signed in <br />
+      <button onClick={() => signIn()}>Sign in</button>
+      </>
+    )
+    
 }
