@@ -1,7 +1,7 @@
 import { baseUrl, hostUrl, localUrl } from "@utils/discordAPI";
 import axios from "axios";
 import type { NextApiRequest, NextApiResponse } from "next";
-import { client_secret, botToken } from "private/env";
+import "dotenv/config";
 
 function makeConfig(authorization_token: string) {
   const data = {
@@ -21,8 +21,8 @@ export default async function handler(
   const reqData = JSON.parse(req.body);
   console.log(reqData);
   const params = new URLSearchParams();
-  params.append("client_id", "1057714376129400872");
-  params.append("client_secret", client_secret);
+  params.append("client_id", "1072739158570844180");
+  params.append("client_secret", process.env.CLIENT_SECRET!);
   params.append("grant_type", "authorization_code");
   params.append(
     "redirect_uri",
@@ -49,7 +49,7 @@ export default async function handler(
     ).then((res) => res.json());
 
     const botGuild = await fetch(`${baseUrl}/users/@me/guilds`, {
-      headers: { authorization: botToken },
+      headers: { authorization: process.env.BOTTOKEN! },
     }).then((res) => res.json());
 
     res
