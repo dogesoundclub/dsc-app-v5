@@ -6,9 +6,9 @@ export default function Footer() {
 
     return (
         <div className="relative -top-[60px]">
-        <ExternalLink href="https://www.instagram.com/dogesoundclub/">
-            <div className="relative w-[465px] h-[30px]  text-[15px] text-[#838383] text-center">
-                    Unless otherwise stated, contents licensed as CC BY-SA 4.0
+        <ExternalLink href="https://creativecommons.org/licenses/by-sa/4.0/">
+            <div className="relative w-[465px] h-[30px]  text-[15px] text-[#838383] text-center underline underline-offset-2">
+                    Unless otherwise stated, all contents licensed CC BY-SA 4.0
             </div>
         </ExternalLink>
         <div className="relative w-[465px] h-[18px] -top-[3px] font-neodgm text-white text-[18px] text-right">
