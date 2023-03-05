@@ -1,4 +1,5 @@
-import { cdnUrl, identify } from "@utils/discordAPI";
+// import { cdnUrl, identify } from "@utils/discordAPI";
+import { identify } from "@utils/discordAPI";
 import { useUser } from "@hooks/useUser";
 import { useRouter } from "next/router";
 import HeaderItem from "./headerItem";
