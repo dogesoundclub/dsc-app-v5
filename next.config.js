@@ -1,11 +1,7 @@
 /** @type {import('next').NextConfig} */
-const debug = process.env.NODE_ENV !== "production";
-// const repository = "dsc-app-v5";
-const repository = "";
-
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: !debug ? `/${repository}` : "", // production 일때 prefix 경로
+  // assetPrefix: (process.env.NODE_ENV === "production") ? `/${repository}` : "", // production 일때 prefix 경로
   trailingSlash: true, // 빌드 시 폴더 구조 그대로 생성하도록
 }
 

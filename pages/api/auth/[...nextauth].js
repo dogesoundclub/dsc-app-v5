@@ -1,6 +1,5 @@
 import NextAuth from "next-auth"
 import DiscordProvider from "next-auth/providers/discord";
-import "dotenv/config";
 
 export const authOptions = {
   // Configure one or more authentication providers
@@ -9,6 +8,7 @@ export const authOptions = {
       clientId: process.env.DISCORD_CLIENT_ID,
       clientSecret: process.env.DISCORD_CLIENT_SECRET
     })
-  ]
+  ],
+  // secret: 'IamVeryHandsome' 
 }
 export default NextAuth(authOptions)
