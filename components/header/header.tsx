@@ -1,11 +1,10 @@
-// import { cdnUrl, identify } from "@utils/discordAPI";
-import { identify } from "@utils/discordAPI";
-import { useUser } from "@hooks/useUser";
-import { useRouter } from "next/router";
-import HeaderItem from "./headerItem";
-import { IoIosArrowDown } from "react-icons/io";
-
+import { useRouter } from "next/router"
 import { useSession, signIn, signOut } from "next-auth/react"
+
+// import { cdnUrl, identify } from "@utils/discordAPI";
+// import { useUser } from "@hooks/useUser";
+// import HeaderItem from "./headerItem";
+// import { IoIosArrowDown } from "react-icons/io";
 
 export default function Header() {
     // const hook = useUser();
@@ -15,8 +14,9 @@ export default function Header() {
       return (
         <>
             <div className="w-[465px] relative -top-[990px] flex flex-col items-end">
-            Signed in as {session.user.name} <br />
-        <button onClick={() => signOut()}>Sign out</button>
+            Signed in as {session.user!.name} <br />
+        <button 
+            onClick={() => signOut()}>Sign out</button>
 
             {/* {!hook.login ? (
               <HeaderItem
@@ -64,8 +64,12 @@ export default function Header() {
     }
     return (
       <>
-      Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
+      <div className="w-[465px] relative -top-[990px] flex flex-col items-end">
+      {/* Not signed in <br /> */} 
+      <button 
+        className="relative top-[69px] bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white-500 hover:border-transparent"
+        onClick={() => signIn()}>LOGIN</button>
+        </div>
       </>
     )
     

@@ -21,8 +21,8 @@ export default async function handler(
   const reqData = JSON.parse(req.body);
   console.log(reqData);
   const params = new URLSearchParams();
-  params.append("client_id", "1072739158570844180");
-  params.append("client_secret", process.env.CLIENT_SECRET!);
+  params.append("client_id", process.env.DISCORD_CLIENT_ID!);
+  params.append("client_secret", process.env.DISCORD_CLIENT_SECRET!);
   params.append("grant_type", "authorization_code");
   params.append(
     "redirect_uri",
@@ -49,7 +49,7 @@ export default async function handler(
     ).then((res) => res.json());
 
     const botGuild = await fetch(`${baseUrl}/users/@me/guilds`, {
-      headers: { authorization: botToken },
+      headers: { authorization: process.env.DISCORD_BOT_TOKEN! },
     }).then((res) => res.json());
 
     res

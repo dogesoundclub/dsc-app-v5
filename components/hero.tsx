@@ -36,7 +36,7 @@ export default function Hero() {
                      style={{backgroundImage : `url(${prefix}/img/dscSlogan.png)`}}>
                 </div>
             </div>
-            <div className="relative top-[93px]">
+            <div className="relative top-[96px]">
             <div className="relative w-[465px] h-10 left-0 top-9 bg-slate-800 border-solid border-4 border-red-700">{/*bestDogeSoundBox*/}
                         <div className="relative w-full top-1 m-auto overflow-x-scroll scrollbar-hide">{/*wrapperDogeSound*/}
                             <p className="dogesoundText w-[1000px] font-neodgm whitespace-nowrap text-white">{congratulation}</p>{/*targetDogeSound*/}
