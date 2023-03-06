@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState, useEffect } from "react";
-import { prefix } from "../config/config";
+// import { prefix } from "../config/config";
 
 export default function Hero() {
 
@@ -8,6 +8,7 @@ export default function Hero() {
   const [dogeSound, setDogeSound] = useState([]);
   const [round, setcontestRound] = useState([]);
   const [winner, setContestWinner] = useState([]);
+  const prefix = "";
 
   const getContestResult = async () => {
   const json = await (await fetch(`https://api.dogesound.club/dogesoundwinner`)).json();

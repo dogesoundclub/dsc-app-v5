@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import { ExternalLink } from 'react-external-link';
-import { prefix } from "../config/config";
+// import { prefix } from "../config/config";
 
 export default function Nav() {
     const TEXT_HOME = "HOME";
     const TEXT_GREETING = "GREETING";
     const TEXT_FICTION = "FICTION";
     const TEXT_TERM = "TERM";
+    const prefix = "";
 
 
     return (
@@ -15,7 +16,7 @@ export default function Nav() {
               <div className='relative w-[465px] left-0 top-1 border-t border-white'>
                 <div className='relative h-2 left-0 top-0 border-l border-white'>
                   <div className='relative w-9 h-2 left-1 top-2 font-neodgm text-white text-[20px]'>
-                    <Link href="/">{TEXT_HOME}</Link>
+                    <Link href="/">{process.env.NEXT_PUBLIC_DISCORD_CLIENT_ID}</Link>
                   </div>
                 </div>
                 <div className='relative w-0 h-2 left-16 -top-2 border-l border-white'>

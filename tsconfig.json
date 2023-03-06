@@ -20,6 +20,6 @@
       "@img/*": ["public/img/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "api/*", "pages/api/restricted.js", "pages/api/auth/[...nextauth]"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "api/auth/*.ts", "api/restricted.ts"],
   "exclude": ["node_modules"]
 }
