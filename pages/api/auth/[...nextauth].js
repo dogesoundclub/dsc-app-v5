@@ -1,17 +1,14 @@
 import NextAuth from "next-auth"
 import DiscordProvider from "next-auth/providers/discord"
 
-const _clientId = process.env.DISCORD_CLIENT_ID
-const _clientSecret = process.env.DISCORD_CLIENT_SECRET
-
 export const authOptions = {
   // Configure one or more authentication providers
   providers: [
     DiscordProvider({
-      clientId: _clientId,
-      clientSecret: _clientSecret
+      clientId: process.env.NEXT_PUBLIC_DISCORD_CLIENT_ID,
+      clientSecret: process.env.NEXT_PUBLIC_DISCORD_CLIENT_SECRET
     })
   ],
-  // secret: 'IamVeryHandsome' 
+  secret: process.env.NEXT_PUBLIC_SECRET
 }
 export default NextAuth(authOptions)
