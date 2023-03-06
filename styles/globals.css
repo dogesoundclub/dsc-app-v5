@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import "react-notion/src/styles.css";
+/* @import "/fonts/style.css"; */
 
 .notion * {
   color: rgb(255, 255, 255);

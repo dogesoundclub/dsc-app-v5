@@ -6,7 +6,9 @@
     "dev": "next dev -p 3005",
     "start": "next start",
     "lint": "next lint",
-    "build": "next build"    
+    "build": "next build && next export"
+
+    
   },
   "dependencies": {
     "@types/node": "18.14.2",

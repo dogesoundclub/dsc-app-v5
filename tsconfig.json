@@ -18,6 +18,8 @@
     "paths": {
       "@/*": ["./*"],
       "@img/*": ["public/img/*"],
+      "@fonts/*": ["public/fonts/*"],
+
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "api/auth/*.ts", "api/restricted.ts"],

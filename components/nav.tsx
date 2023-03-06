@@ -45,7 +45,7 @@ export default function Nav() {
           <div className="relative h-[10px] left-[150px] -top-[10px] border-l border-[#636363]">
             <ExternalLink href="https://opensea.io/collection/dogesoundclub-mates">
                 <div className ="relative w-[24px] h-[24px] left-[5px] top-4 bg-cover"
-                     style={{backgroundImage : `url(${prefix}/img/icon/opensea.png`}}></div>
+                     style={{backgroundImage : `url(${prefix}/img/icon/opensea.png)`}}></div>
             </ExternalLink>
           </div>
           <div className="relative h-[10px] left-[194px] -top-[20px] border-l border-[#636363]">
