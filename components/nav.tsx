@@ -12,7 +12,7 @@ export default function Nav() {
 
     return (
         <>
-      <nav className='relative w-[465px] h-[70px] -top-[720px] bg-gradient-to-b from-black to-transparent opacity-90 overflow-x-scroll scrollbar-hide'>
+      <nav className='relative w-[465px] h-[50px] -top-[720px] bg-gradient-to-b from-black to-transparent opacity-90 overflow-x-scroll scrollbar-hide'>
               <div className='relative w-[465px] left-0 top-1 border-t border-white'>
                 <div className='relative h-2 left-0 top-0 border-l border-white'>
                   <div className='relative w-9 h-2 left-1 top-2 font-neodgm text-white text-[20px]'>
