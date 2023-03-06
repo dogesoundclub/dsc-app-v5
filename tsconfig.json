@@ -18,16 +18,8 @@
     "paths": {
       "@/*": ["./*"],
       "@img/*": ["public/img/*"],
-      "@services": ["services"],
-      "@services/*": ["services/*"],
-      "@hooks": ["hooks"],
-      "@hooks/*": ["hooks/*"],
-      "@stores": ["stores"],
-      "@stores/*": ["stores/*"],
-      "@utils": ["utils"],
-      "@utils/*": ["utils/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "api/*", "pages/api/restricted.js", "pages/api/auth/[...nextauth]"],
   "exclude": ["node_modules"]
 }
