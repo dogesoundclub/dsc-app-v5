@@ -9,8 +9,8 @@ export default function Document() {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.ico" />
   </Head>
-      <body className="bg-black"
-            style={{zoom : "80%"}}>
+      <body className="w-full bg-black"
+            style={{zoom : "70%"}}>
         <Main />
         <NextScript />
       </body>
