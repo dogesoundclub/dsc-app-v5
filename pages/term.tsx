@@ -21,7 +21,7 @@ export default function Term() {
     <Layout>
     <div className="relative h-[120px] top-[210px]">
       <div className="relative w-[466px] -top-[780px] bg-[#000000] opacity-90">
-      <div className="relative w-[466px] h-[810px] -top-[90px] bg-cover overflow-y-scroll scrollbar-hide">
+      <div className="relative w-[466px] h-[792px] -top-[90px] bg-cover overflow-y-scroll scrollbar-hide">
         <NotionRenderer
           // blockMap={staticResponse}
           blockMap={response}

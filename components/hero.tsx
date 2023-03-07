@@ -29,7 +29,7 @@ export default function Hero() {
 
     return (
         <>
-            <div className="flex w-[465px]">{/*hi*/}
+            <div className="flex max-w-[465px] w-full">{/*hi*/}
                 <div className="relative w-[300px] h-[300px] left-0 top-[120px] bg-cover" 
                      style={{backgroundImage : `url(${prefix}/img/himaskman660660.png`}}>
                 </div>
