@@ -32,7 +32,7 @@ export default function Nav() {
               </div>
         </nav>
 
-        <div className="relative w-[465px] -top-[30px] border-t border-[#636363]">
+        <div className="relative  max-w-[465px] w-full -top-[30px] border-t border-[#636363]">
           <div className="relative h-[10px] border-l border-[#636363]">
                 <div className="relative w-[50px] h-[20px] left-1 top-2 font-neodgm text-[20px] text-[#636363]">
                   <Link
