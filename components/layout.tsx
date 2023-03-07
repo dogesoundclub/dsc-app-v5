@@ -10,7 +10,7 @@ interface LayoutProps {
 
 export default function Layout({children} : LayoutProps) {
     return (
-        <div className="flex w-full flex-col items-center">
+        <div className="flex w-full flex-col items-center overflow-hidden">
                      
             <Hero/>            
             {children}   
