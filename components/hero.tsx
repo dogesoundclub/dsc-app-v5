@@ -53,7 +53,7 @@ export default function Hero() {
                 </div>{/*gameboyDsc*/}
             </div>
             <div>
-                <div className="relative w-[300px] h-[300px] left-0 top-12 bg-[url('https://storage.googleapis.com/dsc-engine/gif/8680.gif')] bg-cover"></div>{/*portalEngine*/}
+                <a href="https://opensea.io/collection/portal-engine" target='_blank'><div className="relative w-[300px] h-[300px] left-0 top-12 bg-[url('https://storage.googleapis.com/dsc-engine/gif/8680.gif')] bg-cover"></div></a>{/*portalEngine*/}
                 <div className="relative w-[300px] h-8 top-4 bg-red-800">{/*portalEngineBox*/}
                     <p className="relative w-[300px] h-8 top-[3px] font-neodgm text-white text-xl text-center">{TEXT_DO_NOT_TOUCH}{/*portalEngineText*/}</p>
             </div>
